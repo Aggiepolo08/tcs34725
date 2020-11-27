@@ -1,16 +1,25 @@
 input.onButtonPressed(Button.A, function () {
     POLL = false
+    basic.showIcon(IconNames.Heart)
+    Red = -1
+    Green = -1
+    Blue = -1
 })
 input.onButtonPressed(Button.B, function () {
     POLL = true
+    basic.showIcon(IconNames.Heart)
 })
+let Blue = 0
+let Green = 0
+let Red = 0
 let POLL = false
 POLL = false
-let Red = -1
-let Green = -1
-let Blue = -1
+Red = -1
+Green = -1
+Blue = -1
 basic.forever(function () {
     while (POLL) {
+        basic.showIcon(IconNames.Heart)
         Red = envirobit.getRed()
         Green = envirobit.getGreen()
         Blue = envirobit.getBlue()
