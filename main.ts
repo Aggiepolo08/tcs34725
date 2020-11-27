@@ -5,7 +5,7 @@ input.onButtonPressed(Button.B, function () {
     POLL = true
 })
 let POLL = false
-POLL = true
+POLL = false
 let Red = -1
 let Green = -1
 let Blue = -1
