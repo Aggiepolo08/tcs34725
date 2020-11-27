@@ -1,13 +1,13 @@
 input.onButtonPressed(Button.A, function () {
     POLL = false
-    basic.showIcon(IconNames.Heart)
+    basic.showIcon(IconNames.No)
     Red = -1
     Green = -1
     Blue = -1
 })
 input.onButtonPressed(Button.B, function () {
     POLL = true
-    basic.showIcon(IconNames.Heart)
+    basic.showIcon(IconNames.Yes)
 })
 let Blue = 0
 let Green = 0
