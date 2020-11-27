@@ -4,11 +4,11 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     POLL = true
 })
-let Blue = 0
-let Green = 0
-let Red = 0
 let POLL = false
 POLL = true
+let Red = -1
+let Green = -1
+let Blue = -1
 basic.forever(function () {
     while (POLL) {
         Red = envirobit.getRed()
